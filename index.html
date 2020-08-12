@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+             body{
+        margin:30px;
+    }
+    .flex{
+       display: flex;
+       justify-content: space-between;
+    }
+
+    .flex-in{
+       display: flex;
+       justify-content: space-around;
+    }
+     </style>
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+
+<!-- Add a header element with the class flex and within it
+     -add a Div with h3 element Jane&John
+     -add nav element in the header element with it add
+      - an unordered element with the class flex and list ements with list items. 
+      Note content has been provided in note.txt captiond header
+-->
+
+   <header class="flex">
+       <div>
+           <h3>Jane&John</h3>
+       </div>
+    <nav>
+        <ul class="flex">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+   </header>
+
+
+     <!-- Add a section element and within it
+  Add a div with id welcome
+  -the div should contain an h1 element with the content in the note.txt file
+  Add a seperate Div with the element p and add the description froim the note.txt file with the caption jumbotron -->
+
+  <section class="jumbotron">
+    <div id="welcome">
+        <h1>Welcome Here </h1>
+    </div>
+ 
+    <div id="jumbotron">
+     <p>
+ 
+          We love Jane and Johns. Jane and John got missing some time ago and we must find them
+ 
+     </p>
+    </div>
+  </section>
+
+ <!-- Add a section element and within it
+  Add a div with id solution
+  -the div should contain an h3 element with the content in the note.txt file
+  Add a seperate Div with the element p and add the description froim the note.txt file with the caption content -->
+   <section class="container">
+    <div id="solution">
+        <h3>The Problems and our solution Our solution</h3>
+       </div>
+    
+       <div id="content">
+           <p>
+            Suspendisse eu tellus et orci mollis sollicitudin. Vivamus convallis orci non massa finibus,
+             ut venenatis justo tempus. In ac fringilla sem. Morbi lectus tortor, vestibulum pharetra iaculis non,
+              rutrum a leo. Pellentesque et pharetra lorem. Nullam mollis lectus eget euismod commodo. Proin eu ex 
+              eu nisi sodales luctus sit amet et odio. Aliquam mollis dignissim sapien. Etiam pretium felis sit amet
+               sem pulvinar ultrices. Praesent id orci sem. Sed a mauris quis ex hendrerit vehicula. Aenean sodales 
+               placerat blandit. Cras fermentum, nisl et consequat vulputate, lorem risus posuere quam, in fermentum
+                magna sapien non purus. Pellentesque ipsum purus, auctor sit amet diam ut, luctus bibendum risus. 
+                Nullam elementum
+             maximus lectus, eget vulputate orci luctus ac. Sed pretium congue orci, quis consequat magna gravida at.
+           </p>
+       </div>
+   </section>
+
+
+   <!-- Create a section with a parent div with an Id call teams
+    within this Div, create another div with Id Member
+    In the Member Div we need these elements
+    - Image elements with the src=janedoe or src=johndoe
+    - An h3 with the name
+    - A p tag with the description -->
+   <section>
+       <div><h4><center>Meet with the Team</center></h4></div>
+        <div id="team" class="flex-in">
+            <div>
+                <img src="janedoe.png" alt="" width="100px">
+                <h3>Jane Doe</h3>
+                <p>Jane is highly respected</p>
+            </div>
+
+            <div>
+                <img src="johndoe.jpg" alt="" width="100px">
+                <h3>John Doe</h3>
+                <p>Jane is highly respected</p>
+            </div>
+
+            <div>
+                <img src="janedoe.png" alt="" width="100px">
+                <h3>Jane and John</h3>
+                <p>Jane is highly respected</p>
+            </div>
+        </div>
+   </section>
+
+   <!-- Add a footer elemet and add an input element with a button  -->
+   <footer class="container">
+       <input type="text" >
+       <button class="btn btn-primary">Subscribe</button>
+   </footer>
+
+</body>
+</html>
